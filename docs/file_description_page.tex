@@ -1,0 +1,12 @@
+\doxysection{File Descriptions}
+\hypertarget{file_description_page}{}\label{file_description_page}\index{File Descriptions@{File Descriptions}}
+Brief file descriptions\+:
+\begin{DoxyItemize}
+\item main.\+py\+: The main program to be ran on the STM32 Nucleo Microcontroller. Manages the multitasking of the two tasks as described in the \doxylink{finiteStateMachinePage}{Finite State Machines} section.
+\item term\+\_\+project.\+py\+: The main program to be ran on a PC connected to the operating microcontroller. Contains a simple GUI button that restarts the microcontroller, allowing the main.\+py program to be ran.
+\item motor\+\_\+control.\+py\+: A supporting module that creates the class "{}\+Motor\+Control"{} which contains methods to implement a PID controller to the motor-\/encoder system.
+\item motor\+\_\+driver.\+py\+: A supporting module that creates the class "{}\+Motor\+Driver"{} to initialize and control a brushed DC motor connected through the hardware motor driver.
+\item encoder\+\_\+reader.\+py\+: A supporting module that creates the class "{}\+Encoder"{} to initialize and collect position data from the brushed DC motor with an internal encoder.
+\item servo.\+py\+: A supporting module that creates the class "{}\+Servo"{} to initialize and control the angular position of a servo motor.
+\item mlx\+\_\+cam.\+py\+: A supporting module that creates the class "{}\+MLX\+\_\+\+Cam"{} to initialize and manipulate temperature readings from an I2C thermal camera. 
+\end{DoxyItemize}

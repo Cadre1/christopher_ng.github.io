@@ -1,0 +1,26 @@
+\doxysection{Finite State Machines}
+\hypertarget{finite_state_machine_page}{}\label{finite_state_machine_page}\index{Finite State Machines@{Finite State Machines}}
+The main.\+py program provided in this documentation contains two tasks, Timing and Shooting, that follow the two finite state machines as seen below.
+
+The Timing task is used to set timers for each major event in the shootout and then set flags for the Shooting task to change modes correspondingly. The states are as follows\+:
+\begin{DoxyItemize}
+\item S0 Init\+: Initializes the required pins and flags used in the Timing task.
+\item S1 Wait For Input\+: Waits for an input from the initialized GPIO pin wired to the starting button.
+\item S2 Wait For Start\+: Waits 5 seconds for the starting phase, in which the target can move around, to end.
+\item S3 Wait For Stop\+: Waits 10 seconds for the shooting phase, in which the turret is allowed to fire, to end.
+\item S4 Stopped\+: Waits 1 second for the for the turret to stop before returning to its original position.
+\item S5 Return\+: Waits 3 seconds for the for the turret to return to its original position.
+\end{DoxyItemize}
+
+The Shooting task manages the turning, aiming, and firing during the shootout with its states set by the Timing task flags correspondingly. The states are as follows\+:
+\begin{DoxyItemize}
+\item S0 Init Power\+: Initializes the required pins, timers, I2C channels, drivers, controller variables, and miscellaneous setting variables for the panning motor, encoder, flywheel GPIO pin, thermal camera, and servo.
+\item S1 Wait For Start\+: Rotates the turret 180 degrees and waits during the initial 5 seconds until the Timer task sets the Start\+\_\+\+Flag.
+\item S2 Locate\+: Uses the thermal camera to determine the centroid/hotspot where the target should be locatedand calculates the required position the motor needs to move to.
+\item S3 Target\+: Uses the motor position calculated from the Locate state to rotate the turret correspondingly.
+\item S4 Shoot\+: Uses the flywheel and servo to pull the trigger and fire the Nerf dart at the motors set position.
+\item S5 Stop\+: Stops all motor motion and resets the servo.
+\item S6 Return\+: Rotates the turret back to 0 degrees and disables the motors and waits.
+\end{DoxyItemize}
+
+  
