@@ -2,14 +2,12 @@
  *
  * Welcome to Christopher Ng's Main Page!
  * 
- * I am going to be graduating with a BS in Mechanical Engineering with a concentration in Mechatronics from Cal Poly, SLO (June, 2024). My
- * focus in this field has included electro-mechanical system design, programming both for control systems and computational analysis, and 
- * thermal and heat transfer.
+ * I will be graduating with a BS in Mechanical Engineering with a concentration in Mechatronics from Cal Poly, SLO (June, 2024). My focus in this field has included electro-mechanical system design, programming both for control systems and computational analysis, and thermal and heat transfer.
  *
- * Containted in this webpage is a list and sources of some of the projects that I have taken a part in. My resume and some additional
- * information about me can also be found here. 
+ * Containted in this webpage is a list and sources of some of the undergraduate projects that I have taken a part in as well as labs I have conducted and documented. My resume and some additional information about me can also be found here. 
  *
- * Projects: 
+ *  \section project_sec Projects
+ *	
  * - \subpage improvedCombustionLinerSealProject "Improved Combustion Liner Seal Senior Design Project"
  *
  * - \subpage automatedTurretProject "Automated Turret Mechatronics Project"
@@ -22,26 +20,155 @@
  *
  * - \subpage swirlCoolingInjectorProject "Swirl Cooling Injector SLO Propulsion Project"
  *
- * More Information:
- * - \subpage resume "Resume"
- * 
+ *
+ *  \section lab_sec Lab Experience
+ * - [Vibrations - Load Cell Calibration Lab Report](loadCellCalibrationReport.pdf)
+ * - [Vibrations - Single and Double Pendulum Lab Report](singleAndDoublePendulumReport.pdf)
+ * - [Strength and Stiffness - Stress Concenetrations Lab Memo](stressConcentrationsMemo.pdf)
+ * - [Fluids - Cylinder Boundary Layer and Flow Lab Memo](cylinderInUniformFlowStreamMemo.pdf)
+ * - [Heat Transfer - Air-to-Air Heat Exchanger Lab Report](airToAirHeatExchangerReport.pdf)
+ * - [Computation Heat Transfer - Intro to FEM Modeling Memo](introToFEMModelingMemo.pdf)
+ * - [Mechatronics - DC Motor Control Memo](DCMotorControlMemo.pdf)
+ *
+ *
+ *	\section additional_sec Additional Information
+ * - [Resume](resume.pdf)
+ *
  * - \subpage additionalInformation "Additional Information"
  *
  */ 
 
 /*! \page improvedCombustionLinerSealProject Improved Combustion Liner Seal Senior Design Project
- *
- *  This research and design project was sponsored by Solar Turbines, an international gas engine and engine maintenance provider. My team was
- *	tasked to develop a mechanical sealing method to seal a region between one of their turbine engine's combustion liner and turbine nozzle. 
- *	The challenges of this design included extreme temperature environments where thermal expansion and non-linear properties needed to be
- * 	considered, large nominal diameters with small geometric features, and predefined assembly processes that the design needed to fulfill.
- *	My team worked through various designs and determined an E-seal design to be the most appropriate for the situation. A small-scale 
- * 	prototype was manufactured with an E-seal provided by JETSEAL, a seal vendor, and test plans were developed and applied to produce leak
- *  rates for various scenarios. 
- *
- *	More information can be found here \link https://digitalcommons.calpoly.edu/do/search/?q=&start=0&context=889333&facet=subject_facet%3ASolar%20Turbines# \endlink and here.
  * 
+ *  \b Date
+ *
+ *  2023-2024
+ *
+ *	\b Description
+ *
+ *  This research and design project was sponsored by Solar Turbines, an international gas engine and engine maintenance provider. My team was tasked with developing a mechanical sealing method to seal a region between one of their turbine engine's combustion liner and turbine nozzle. The challenges of this design included extreme temperature environments where thermal expansion and non-linear properties needed to be considered, large nominal diameters with small geometric features, and predefined assembly processes that the design needed to fulfill. Over the year, my team conducted research on existing designs and analyzed various designs of our own to determine that an E-seal design was the most appropriate solution based off of Solar Turbines' needs for the situation. A small-scale prototype was manufactured with an E-seal provided by JETSEAL, a seal vendor, and test plans were developed and applied to produce leak rates for various scenarios. 
+ *
+ *	\image html improvedCombustionLinerSealCAD.png "To-Scale Final CAD Design"
+ *
+ *  \image html improvedCombustionLinerSealPrototype.jpg "Small-Scale Functional Prototype"
+ *
+ *	<b> My Role and Takeaways </b> 
+ *
+ *	Over this project, I had the opportunity to really work with a client to develop an idea that worked for their specific needs. We had discussions to help guide the design process, and conduct research to get a grasp on the problem. And after selecting one of many potential designs, I got to use various skills developed through courses, including stress analysis, 3D CAD modeling and drafting, and thermal analysis. This allowed us to justify our design and why we believed it would work through documents such as PDRs and CDRs and formal technical presentations with the sponsor engineers. Once the design was critiqued and reworked, I helped in developing a manufacturing plan and testing plans for a functional prototype. I developed testing procedures and uncertainty calculations to go with raw data collection. We then got to manufacturing the prototype, testing it, and post-processing the data to develop comprehensible results. 
+ *
+ *	<b> More information on the project </b> 
+ * - [Cal Poly's senior project archive](https://digitalcommons.calpoly.edu/do/search/?q=&start=0&context=889333&facet=subject_facet%3ASolar%20Turbines#)
+ * - [Final Presented Public Poster](improvedCombustionLinerSealPoster.pdf)
+ *
  *  \image html Task1_FSM.png
  *  \image html Task2_FSM.png
+ *
+ */
+
+/*! \page automatedTurretProject Automated Turret Mechatronics Project
+ * 
+ *  \b Date
+ *
+ *  2023
+ *
+ *	\b Description
+ *
+ *  This electro-mechanical design project utilized a combination of mechanical design, manufacturing, electronics, and microcontroller programming to produce an automated Nerf turret capable of detecting a human using infared sensors and then panning to aim at the target using closed-loop control. This involved applying CAD modeling to produce parts to either be 3D printed or laser-cut, selecting basic electronics such as motors and servos to work with a microcontroller, and closed-loop control programming in Python.
+ *
+ *  \image html automatedTurret.jpg "Turret in Testing"
+ *
+ *	<b> My Role and Takeaways </b> 
+ *
+ *	While I have had experience programming, designing, and working around microcontrollers, this was the first experience being more of a key player in combining them for a project. Within the four weeks, which was reduced due to external situations at Cal Poly, I helped manage my team to develop a design and ensure that it functions as required on time. This involved working with my teammates to finalize mechanical designs and features, making sure every small detail would work; learning how to develop electro-mechanical drivers and controllers and utilize communication protocols like UART and I2C to work in Python; and spending timetroubleshooting electro-mechanical and programming issues. Documenting problems like gear pitches being too small and IR sensor positioning being too low were things that we learned to recognize during this process to prevent in future designs.
+ *
+ *	<b> More information on the project </b> 
+ * - [Github Repository](https://github.com/Cadre1/Term-Project/tree/main?tab=readme-ov-file)
+ * - [Programming Documentation](https://cadre1.github.io/Term-Project/)
+ *
+ */
+
+/*! \page heliostatProject Heliostat Mechatronics Project
+ * 
+ *  \b Date
+ *
+ *  2024
+ *
+ *	\b Description
+ *
+ *  This electro-mechanical design project utilized a combination of mechanical design, manufacturing, electronic PCB design, and microcontroller programming to produce an automated heliostat that is capable of determing the direction of a lightsource and then calculating the angle of a mirror to reflect the light to a specified position. This project required us to develop everything from scratch. This included developing electronic PCB designs for the microcontroller and external electronics from scratch along with sourcing electro-mechanical components like motors and electronics. The programming took place in STM32CubeIDE, programming in C. 
+ *
+ *  \image html heliostatPCB.jpg "Designed Microcontroller PCB"
+ *	
+ *	<b> My Role and Takeaways </b> 
+ *
+ *	The main challenge of this project was learning and researching how to design a PCB. I worked through Autodesk Fusion 360 to create schematics and board layouts with parts that I sourced through DigiKey. Ensuring electronic components would work in the design required reading through datasheets along with common applications and verifying appropriate lead times would be met for boards and electronics. I also had to learn how to program the microcontroller for the various components we needed, including motors and servos, radio recievers, IMUs, and photoresistors.
+ *
+ *	<b> More information on the project </b> 
+ * - [Github Repository](https://github.com/Cadre1/ME-507-Term-Project)
+ * - [Programming Documentation](https://cadre1.github.io/ME-507-Term-Project/)
+ *
+ */
+
+/*! \page rideEngineeringCompetitionProject Ride Engineering Competition CAPED Project
+ * 
+ *  \b Date
+ *
+ *  2021-2023
+ *
+ *	\b Description
+ *
+ *  The two competition projects that I worked on at the Cal Poly Amusement Park Engineer and Designers (CAPED) club were both to design a functioning scaled-down rollercoaster within ASTM F2291 standards. The two designs that were developed can be seen below and had a focus on safety and ingenuity while working around existing designs. This included E-stops, redundent mechanical and control safety features, and braking mechanisms. At the same time, we wanted to design something new but obtainable, leading us to the final designs.
+ *
+ *  \image html rideEngineeringCompetition2022.jpg "REC 2022 Final Design"
+ *
+ *  \image html rideEngineeringCompetition2023.jpg "REC 2023 Final Design"
+ *
+ *	<b> My Role and Takeaways </b> 
+ *
+ *  These projects were my first real experience working on a multidiscipline team for a long-term project. I worked on the team as both a controls member for the 2022 project, where I learned the basics of microcontrollers and E-stop mechanisms, and a mechanical staff for the 2023 project, where I applied CAD for various designs and advanced geometry. A significant challenge with these designs was manufacturing capabilities. I had to develop track designs that would not only work structurally and allow the vehicle to maintain enough energy to overcome friction at high force regions such as turns, but also be manufacturable through the processes available at the school like tube bending, waterjet cutting, and welding. This often involved having discussions with mechanical, manufacturing, and electronic leads to ensure that the design would work as they needed it.
+ *
+ *	<b> More information on the project </b> 
+ * - [Ride Engineering Competition 2022](https://slocaped.weebly.com/rec-2022.html)
+ * - [Ride Engineering Competition 2023](https://slocaped.weebly.com/rec-2023.html) 
+ *
+ */
+
+/*! \page regenerativeCoolingProject Regenerative Cooling Combustion Chamber SLO Propulsion Project
+ * 
+ *  \b Date
+ *
+ *  2023
+ *
+ *	\b Description
+ *
+ *  This thermal-fluid design project was intended to develop a combustion chamber that would incorperate regenerative cooling channels along the chamber walls of a previous combustion chamber. This would allow combustion to occur theoretically indefinetly by cooling the walls to prevent them from reaching melting points. The designing of the channels was a key point in ensuring low wall temperatures, ensuring there would be no mechanical pressure failure, and ensuring that the design could be manufactured at less than 1/20th of the scale of a normal combustion chamber. The project was discontinued after management underestimated the scope of the project.
+ *
+ *  \image html regenerativeCoolingCombustionChamber.png "Manufacturing CAD Drawing"
+ *
+ *	<b> My Role and Takeaways </b> 
+ *
+ *  With my main role as a designer around the heat transfer that would occur, I had to learn to use a combustion chamber design tool, Rocket Propulsion Analysis (RPA), to develop functioning geometry. This required that I evaluate the fidelity of the heat transfer and fluid modeling that the program used and begin to model it myself using existing documentation and studies. Scale was a large problem with this design because while a normal combustion chamber could have thin but many channels, our design was limited by the size of end mills, reaching as small as 0.010" diameters. This, along with other challenges in manufacturing the complex channel shapes, forced us to look into work-arounds and reconsider the scope of the project. As one of my earlier experiences with propulsion systems, this helped me learn a bit about the challenges involved and the multitude of components that I did not know how to analyze. 
+ *
+ */
+
+/*! \page swirlCoolingInjectorProject Swirl Cooling Injector SLO Propulsion Project
+ * 
+ *  \b Date
+ *
+ *  2024
+ *
+ *	\b Description
+ *
+ *  This thermal-fluid design project was a small scale project with the goal to develop a swirl cooling injector that will allow for combustion similar to a normal combustion chamber, but develop a layer of cooling oxidizer between the internal combustion vortex and wall. We developled the design to be operated at low temperatures and pressures which would allow us to use materials that were clear and could achieve complex geometry for us to study the combustion visibly. This involved conducting research about swirl cooling to develop our own design. 
+ *
+ *  \image html swirlCoolingInjector.jpg "Cold Flow Swirl Cooled Injector"	
+ *
+ *	<b> My Role and Takeaways </b> 
+ *
+ *  For this project, I helped manage things like required materials and lead times, CAD assemblies, and stress and fluid analysis. 
+ *
+ *	<b> More information on the project </b> 
+ * - [Cold Flow (Compressed Water and Air) Test](https://youtu.be/vvSSy80LW2k)
+ * - [Inspiration](https://www.youtube.com/watch?v=tqEfbJRKzeQ)
  *
  */

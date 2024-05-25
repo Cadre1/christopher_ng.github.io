@@ -25,13 +25,21 @@
 var NAVTREE =
 [
   [ "Christopher Ng's Portfolio", "index.html", [
-    [ "Improved Combustion Liner Seal Senior Design Project", "improved_combustion_liner_seal_project.html", null ]
+    [ "Projects", "index.html#project_sec", null ],
+    [ "Lab Experience", "index.html#lab_sec", null ],
+    [ "Additional Information", "index.html#additional_sec", null ],
+    [ "Improved Combustion Liner Seal Senior Design Project", "improved_combustion_liner_seal_project.html", null ],
+    [ "Automated Turret Mechatronics Project", "automated_turret_project.html", null ],
+    [ "Heliostat Mechatronics Project", "heliostat_project.html", null ],
+    [ "Ride Engineering Competition CAPED Project", "ride_engineering_competition_project.html", null ],
+    [ "Regenerative Cooling Combustion Chamber SLO Propulsion Project", "regenerative_cooling_project.html", null ],
+    [ "Swirl Cooling Injector SLO Propulsion Project", "swirl_cooling_injector_project.html", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"improved_combustion_liner_seal_project.html"
+"automated_turret_project.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

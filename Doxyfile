@@ -1,4 +1,4 @@
-# Doxyfile 1.10.0
+# Doxyfile 1.11.0
 
 # This file describes the settings to be used by the documentation system
 # doxygen (www.doxygen.org) for a project.
@@ -61,7 +61,7 @@ PROJECT_BRIEF          = "Christopher Ng's Portfolio"
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           =
+PROJECT_LOGO           = dox/profilePicture.jpg
 
 # With the PROJECT_ICON tag one can specify an icon that is included in the tabs
 # when the HTML document is shown. Doxygen will copy the logo to the output
@@ -364,7 +364,7 @@ MARKDOWN_SUPPORT       = YES
 # to that level are automatically included in the table of contents, even if
 # they do not have an id attribute.
 # Note: This feature currently applies only to Markdown headings.
-# Minimum value: 0, maximum value: 99, default value: 5.
+# Minimum value: 0, maximum value: 99, default value: 6.
 # This tag requires that the tag MARKDOWN_SUPPORT is set to YES.
 
 TOC_INCLUDE_HEADINGS   = 5
@@ -392,8 +392,8 @@ AUTOLINK_SUPPORT       = YES
 # to include (a tag file for) the STL sources as input, then you should set this
 # tag to YES in order to let doxygen match functions declarations and
 # definitions whose arguments contain STL classes (e.g. func(std::string);
-# versus func(std::string) {}). This also make the inheritance and collaboration
-# diagrams that involve STL classes more complete and accurate.
+# versus func(std::string) {}). This also makes the inheritance and
+# collaboration diagrams that involve STL classes more complete and accurate.
 # The default value is: NO.
 
 BUILTIN_STL_SUPPORT    = NO
@@ -405,9 +405,9 @@ BUILTIN_STL_SUPPORT    = NO
 CPP_CLI_SUPPORT        = NO
 
 # Set the SIP_SUPPORT tag to YES if your project consists of sip (see:
-# https://www.riverbankcomputing.com/software/sip/intro) sources only. Doxygen
-# will parse them like normal C++ but will assume all classes use public instead
-# of private inheritance when no explicit protection keyword is present.
+# https://www.riverbankcomputing.com/software) sources only. Doxygen will parse
+# them like normal C++ but will assume all classes use public instead of private
+# inheritance when no explicit protection keyword is present.
 # The default value is: NO.
 
 SIP_SUPPORT            = NO
@@ -967,8 +967,8 @@ INPUT_ENCODING         = UTF-8
 # character encoding on a per file pattern basis. Doxygen will compare the file
 # name with each pattern and apply the encoding instead of the default
 # INPUT_ENCODING) if there is a match. The character encodings are a list of the
-# form: pattern=encoding (like *.php=ISO-8859-1). See cfg_input_encoding
-# "INPUT_ENCODING" for further information on supported encodings.
+# form: pattern=encoding (like *.php=ISO-8859-1).
+# See also: INPUT_ENCODING for further information on supported encodings.
 
 INPUT_FILE_ENCODING    =
 
@@ -1105,7 +1105,14 @@ EXAMPLE_RECURSIVE      = NO
 # that contain images that are to be included in the documentation (see the
 # \image command).
 
-IMAGE_PATH             =
+IMAGE_PATH             = dox/improvedCombustionLinerSealCAD.png \
+                         dox/improvedCombustionLinerSealPrototype.jpg \
+                         dox/automatedTurret.jpg \
+                         dox/heliostatPCB.jpg \
+                         dox/rideEngineeringCompetition2022.jpg \
+                         dox/rideEngineeringCompetition2023.jpg \
+                         dox/regenerativeCoolingCombustionChamber.png \
+                         dox/swirlCoolingInjector.jpg
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program
@@ -1406,7 +1413,7 @@ HTML_STYLESHEET        =
 # documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_STYLESHEET  = dox/doxygen-awesome.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note
@@ -1416,20 +1423,28 @@ HTML_EXTRA_STYLESHEET  =
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       =
+HTML_EXTRA_FILES       = dox/improvedCombustionLinerSealPoster.pdf \
+                         dox/resume.pdf \
+                         dox/airToAirHeatExchangerReport.pdf \
+                         dox/cylinderInUniformFlowStreamMemo.pdf \
+                         dox/DCMotorControlMemo.pdf \
+                         dox/introToFEMModelingMemo.pdf \
+                         dox/loadCellCalibrationReport.pdf \
+                         dox/singleAndDoublePendulumReport.pdf \
+                         dox/stressConcentrationsMemo.pdf
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
-# Possible values are: LIGHT always generate light mode output, DARK always
-# generate dark mode output, AUTO_LIGHT automatically set the mode according to
-# the user preference, use light mode if no preference is set (the default),
-# AUTO_DARK automatically set the mode according to the user preference, use
-# dark mode if no preference is set and TOGGLE allow to user to switch between
+# Possible values are: LIGHT always generates light mode output, DARK always
+# generates dark mode output, AUTO_LIGHT automatically sets the mode according
+# to the user preference, uses light mode if no preference is set (the default),
+# AUTO_DARK automatically sets the mode according to the user preference, uses
+# dark mode if no preference is set and TOGGLE allows a user to switch between
 # light and dark mode via a button.
 # The default value is: AUTO_LIGHT.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_COLORSTYLE        = AUTO_LIGHT
+HTML_COLORSTYLE        = LIGHT
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to
@@ -1793,7 +1808,7 @@ TREEVIEW_WIDTH         = 250
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-EXT_LINKS_IN_WINDOW    = NO
+EXT_LINKS_IN_WINDOW    = YES
 
 # If the OBFUSCATE_EMAILS tag is set to YES, doxygen will obfuscate email
 # addresses.
@@ -1859,7 +1874,7 @@ MATHJAX_VERSION        = MathJax_2
 # Possible values are: HTML-CSS (which is slower, but has the best
 # compatibility. This is the name for Mathjax version 2, for MathJax version 3
 # this will be translated into chtml), NativeMML (i.e. MathML. Only supported
-# for NathJax 2. For MathJax version 3 chtml will be used instead.), chtml (This
+# for MathJax 2. For MathJax version 3 chtml will be used instead.), chtml (This
 # is the name for Mathjax version 3, for MathJax version 2 this will be
 # translated into HTML-CSS) and SVG.
 # The default value is: HTML-CSS.
@@ -2228,6 +2243,14 @@ RTF_STYLESHEET_FILE    =
 # This tag requires that the tag GENERATE_RTF is set to YES.
 
 RTF_EXTENSIONS_FILE    =
+
+# The RTF_EXTRA_FILES tag can be used to specify one or more extra images or
+# other source files which should be copied to the RTF_OUTPUT output directory.
+# Note that the files will be copied as-is; there are no commands or markers
+# available.
+# This tag requires that the tag GENERATE_RTF is set to YES.
+
+RTF_EXTRA_FILES        =
 
 #---------------------------------------------------------------------------
 # Configuration options related to the man page output
@@ -2829,7 +2852,7 @@ PLANTUML_INCLUDE_PATH  =
 # The DOT_GRAPH_MAX_NODES tag can be used to set the maximum number of nodes
 # that will be shown in the graph. If the number of nodes in a graph becomes
 # larger than this value, doxygen will truncate the graph, which is visualized
-# by representing a node as a red box. Note that doxygen if the number of direct
+# by representing a node as a red box. Note that if the number of direct
 # children of the root node in a graph is already larger than
 # DOT_GRAPH_MAX_NODES then the graph will not be shown at all. Also note that
 # the size of a graph can be further restricted by MAX_DOT_GRAPH_DEPTH.

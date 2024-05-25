@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['portfolio_0',['Christopher Ng&apos;s Portfolio',['../index.html',1,'']]]
+  ['mechatronics_20project_0',['Mechatronics Project',['../automated_turret_project.html',1,'Automated Turret Mechatronics Project'],['../heliostat_project.html',1,'Heliostat Mechatronics Project']]]
 ];
