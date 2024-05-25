@@ -25,15 +25,13 @@
 var NAVTREE =
 [
   [ "Christopher Ng's Portfolio", "index.html", [
-    [ "Finite State Machines", "finite_state_machine_page.html", null ],
-    [ "File Descriptions", "file_description_page.html", null ],
-    [ "Hardware Information", "hardware_information_page.html", null ]
+    [ "Improved Combustion Liner Seal Senior Design Project", "improved_combustion_liner_seal_project.html", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"file_description_page.html"
+"improved_combustion_liner_seal_project.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

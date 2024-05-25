@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['information_0',['Hardware Information',['../hardware_information_page.html',1,'index']]]
+  ['ng_20s_20portfolio_0',['Christopher Ng&apos;s Portfolio',['../index.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['machines_0',['Finite State Machines',['../finite_state_machine_page.html',1,'index']]]
+  ['portfolio_0',['Christopher Ng&apos;s Portfolio',['../index.html',1,'']]],
+  ['project_1',['Improved Combustion Liner Seal Senior Design Project',['../improved_combustion_liner_seal_project.html',1,'index']]]
 ];
