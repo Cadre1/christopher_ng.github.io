@@ -4,7 +4,8 @@
  * 
  * I will be graduating with a BS in Mechanical Engineering with a concentration in Mechatronics from Cal Poly, SLO (June, 2024). My focus in this field has included electro-mechanical system design, programming both for control systems and computational analysis, and thermal and heat transfer.
  *
- * Containted in this webpage is a list and sources of some of the undergraduate projects that I have taken a part in as well as labs I have conducted and documented. My resume and some additional information about me can also be found here. 
+ * Containted in this webpage is a list and sources of some of the undergraduate projects that I have taken a part in, official work experience, and labs I have conducted and documented. My resume and some additional information about me can also be found here. 
+ *
  *
  *  \section project_sec Projects
  *	
@@ -19,6 +20,13 @@
  * - \subpage regenerativeCoolingProject "Regenerative Cooling Combustion Chamber SLO Propulsion Project"
  *
  * - \subpage swirlCoolingInjectorProject "Swirl Cooling Injector SLO Propulsion Project"
+ *
+ *
+ *  \section work_sec Work Experience
+ *
+ * - \subpage ascentecEngineeringInternship "Ascentec Engineering Machinist/Engineering Intern"
+ *
+ * - \subpage writingAndLearningCenterJob "Writing and Learning Center Instructional Student Assistant"
  *
  *
  *  \section lab_sec Lab Experience
@@ -40,7 +48,7 @@
 
 /*! \page improvedCombustionLinerSealProject Improved Combustion Liner Seal Senior Design Project
  * 
- *  \b Date
+ *  \b Date 
  *
  *  2023-2024
  *
@@ -54,14 +62,12 @@
  *
  *	<b> My Role and Takeaways </b> 
  *
- *	Over this project, I had the opportunity to really work with a client to develop an idea that worked for their specific needs. We had discussions to help guide the design process, and conduct research to get a grasp on the problem. And after selecting one of many potential designs, I got to use various skills developed through courses, including stress analysis, 3D CAD modeling and drafting, and thermal analysis. This allowed us to justify our design and why we believed it would work through documents such as PDRs and CDRs and formal technical presentations with the sponsor engineers. Once the design was critiqued and reworked, I helped in developing a manufacturing plan and testing plans for a functional prototype. I developed testing procedures and uncertainty calculations to go with raw data collection. We then got to manufacturing the prototype, testing it, and post-processing the data to develop comprehensible results. 
+ *	Over this project, I had the opportunity to really work with a client to develop an idea that worked for their specific needs. We had discussions to help guide the design process, and conduct research to get a grasp on the problem. And after selecting one of many potential designs, I got to use various skills developed through courses, including stress analysis, SolidWorks 3D CAD modeling and drafting, and Matlab PDE toolbox for thermal analysis. This allowed us to justify our design and why we believed it would work through documents such as PDRs and CDRs and formal technical presentations with the sponsor engineers. Once the design was critiqued and reworked, I helped in developing a manufacturing plan and testing plans for a functional prototype. I developed testing procedures and uncertainty calculations to go with raw data collection. We then got to manufacturing the prototype, testing it, and post-processing the data to develop comprehensible results. 
  *
  *	<b> More information on the project </b> 
  * - [Cal Poly's senior project archive](https://digitalcommons.calpoly.edu/do/search/?q=&start=0&context=889333&facet=subject_facet%3ASolar%20Turbines#)
  * - [Final Presented Public Poster](improvedCombustionLinerSealPoster.pdf)
- *
- *  \image html Task1_FSM.png
- *  \image html Task2_FSM.png
+ * - [Solar Turbines Home Page](https://www.solarturbines.com/)
  *
  */
 
@@ -73,7 +79,7 @@
  *
  *	\b Description
  *
- *  This electro-mechanical design project utilized a combination of mechanical design, manufacturing, electronics, and microcontroller programming to produce an automated Nerf turret capable of detecting a human using infared sensors and then panning to aim at the target using closed-loop control. This involved applying CAD modeling to produce parts to either be 3D printed or laser-cut, selecting basic electronics such as motors and servos to work with a microcontroller, and closed-loop control programming in Python.
+ *  This electro-mechanical design project utilized a combination of mechanical design, manufacturing, electronics, and microcontroller programming to produce an automated Nerf turret capable of detecting a human using infared sensors and then panning to aim at the target using closed-loop control. This involved applying SolidWorks 3D CAD modeling to produce parts to either be 3D printed or laser-cut, selecting basic electronics such as motors and servos to work with a microcontroller, and closed-loop control programming in Python.
  *
  *  \image html automatedTurret.jpg "Turret in Testing"
  *
@@ -125,7 +131,7 @@
  *
  *	<b> My Role and Takeaways </b> 
  *
- *  These projects were my first real experience working on a multidiscipline team for a long-term project. I worked on the team as both a controls member for the 2022 project, where I learned the basics of microcontrollers and E-stop mechanisms, and a mechanical staff for the 2023 project, where I applied CAD for various designs and advanced geometry. A significant challenge with these designs was manufacturing capabilities. I had to develop track designs that would not only work structurally and allow the vehicle to maintain enough energy to overcome friction at high force regions such as turns, but also be manufacturable through the processes available at the school like tube bending, waterjet cutting, and welding. This often involved having discussions with mechanical, manufacturing, and electronic leads to ensure that the design would work as they needed it.
+ *  These projects were my first real experience working on a multidiscipline team for a long-term project. I worked on the team as both a controls member for the 2022 project, where I learned the basics of microcontrollers and E-stop mechanisms, and a mechanical staff for the 2023 project, where I applied Solidworks 3D CAD for various designs and complex geometry. A significant challenge with these designs was manufacturing capabilities. I had to develop track designs that would not only work structurally and allow the vehicle to maintain enough energy to overcome friction at high force regions such as turns, but also be manufacturable through the processes available at the school like tube bending, waterjet cutting, and welding. This often involved having discussions with mechanical, manufacturing, and electronic leads to ensure that the design would work as they needed it.
  *
  *	<b> More information on the project </b> 
  * - [Ride Engineering Competition 2022](https://slocaped.weebly.com/rec-2022.html)
@@ -147,7 +153,7 @@
  *
  *	<b> My Role and Takeaways </b> 
  *
- *  With my main role as a designer around the heat transfer that would occur, I had to learn to use a combustion chamber design tool, Rocket Propulsion Analysis (RPA), to develop functioning geometry. This required that I evaluate the fidelity of the heat transfer and fluid modeling that the program used and begin to model it myself using existing documentation and studies. Scale was a large problem with this design because while a normal combustion chamber could have thin but many channels, our design was limited by the size of end mills, reaching as small as 0.010" diameters. This, along with other challenges in manufacturing the complex channel shapes, forced us to look into work-arounds and reconsider the scope of the project. As one of my earlier experiences with propulsion systems, this helped me learn a bit about the challenges involved and the multitude of components that I did not know how to analyze. 
+ *  With my main role as a designer around the heat transfer that would occur, I had to learn to use a combustion chamber design tool, Rocket Propulsion Analysis (RPA), to develop functioning geometry. I then incorperated the results into a SolidWorks 3D CAD model and manufacturing drawing. This required that I evaluate the fidelity of the heat transfer and fluid modeling that the program used and begin to model it myself using existing documentation and studies. Scale was a large problem with this design because while a normal combustion chamber could have thin but many channels, our design was limited by the size of end mills, reaching as small as 0.010" diameters. This, along with other challenges in manufacturing the complex channel shapes, forced us to look into work-arounds and reconsider the scope of the project. As one of my earlier experiences with propulsion systems, this helped me learn a bit about the challenges involved and the multitude of components that I had to learn how to analyze. 
  *
  */
 
@@ -165,10 +171,41 @@
  *
  *	<b> My Role and Takeaways </b> 
  *
- *  For this project, I helped manage things like required materials and lead times, CAD assemblies, and stress and fluid analysis. 
+ *  For this project, I helped manage things like required materials and lead times, Solidworks 3D CAD assemblies, and stress and fluid analysis. This involved working with current standards and setups to incorperate the new project's design to existing hardware. Apart from 3D printed parts, I looked into vendors to source other required fittings and stock material that would be required based off of the stress analysis for minimum sizes.
  *
  *	<b> More information on the project </b> 
  * - [Cold Flow (Compressed Water and Air) Test](https://youtu.be/vvSSy80LW2k)
  * - [Inspiration](https://www.youtube.com/watch?v=tqEfbJRKzeQ)
+ *
+ */
+
+/*! \page ascentecEngineeringInternship Ascentec Engineering Machinist/Engineering Intern
+ * 
+ *  \b Date
+ *
+ *  2022
+ *
+ *	<b> My Role and Takeaways </b>  \n
+ * • Ensured compliance with engineer drawings and GD&T specifications through inspections of machined parts using optical comparators and other high resolution measuring devices  \n
+ * • Communicated production information using spreadsheet data and informal documentation \n
+ * • Independently operated and maintained FANUC and Haas CNC machines and their tooling \n
+ *
+ *	<b> More information on the company </b> 
+ * - [Ascentec Engineering Home Page](https://ascenteceng.com/)
+ *
+ */
+
+/*! \page writingAndLearningCenterJob Writing and Learning Center Instructional Student Assistant
+ * 
+ *  \b Date
+ *
+ *  2022-2024
+ *
+ *	<b> My Role and Takeaways </b>  \n
+ * • Assisted over 300 peers in learning upper level Mechanical Engineering content  \n
+ * • Practiced conveying challenging processes and engineering principles using real-world examples under constrained time \n
+ *
+ *	<b> More information on the company </b> 
+ * - [Writing and Lerning Center Cal Poly Home Page](https://writingandlearning.calpoly.edu/tutoring)
  *
  */

@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "Christopher Ng's Portfolio", "index.html", [
     [ "Projects", "index.html#project_sec", null ],
+    [ "Work Experience", "index.html#work_sec", null ],
     [ "Lab Experience", "index.html#lab_sec", null ],
     [ "Additional Information", "index.html#additional_sec", null ],
     [ "Improved Combustion Liner Seal Senior Design Project", "improved_combustion_liner_seal_project.html", null ],
@@ -33,13 +34,15 @@ var NAVTREE =
     [ "Heliostat Mechatronics Project", "heliostat_project.html", null ],
     [ "Ride Engineering Competition CAPED Project", "ride_engineering_competition_project.html", null ],
     [ "Regenerative Cooling Combustion Chamber SLO Propulsion Project", "regenerative_cooling_project.html", null ],
-    [ "Swirl Cooling Injector SLO Propulsion Project", "swirl_cooling_injector_project.html", null ]
+    [ "Swirl Cooling Injector SLO Propulsion Project", "swirl_cooling_injector_project.html", null ],
+    [ "Ascentec Engineering Machinist/Engineering Intern", "ascentec_engineering_internship.html", null ],
+    [ "Writing and Learning Center Instructional Student Assistant", "writing_and_learning_center_job.html", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"automated_turret_project.html"
+"ascentec_engineering_internship.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
