@@ -6,16 +6,17 @@
 
 {\bfseries{Description}} 
 
-This electro-\/mechanical design project utilized a combination of mechanical design, manufacturing, electronic PCB design, and microcontroller programming to produce an automated heliostat that is capable of determing the direction of a lightsource and then calculating the angle of a mirror to reflect the light to a specified position. This project required us to develop everything from scratch. This included developing electronic PCB designs for the microcontroller and external electronics from scratch along with sourcing electro-\/mechanical components like motors and electronics. The programming took place in STM32\+Cube\+IDE, programming in C.
+This electro-\/mechanical design project utilized a combination of mechanical design, manufacturing, electronic PCB design, and microcontroller programming to produce an automated heliostat that is capable of determing the direction of a lightsource and then calculating the angle of a mirror to reflect the light to a specified position. This project required us to develop everything from scratch. This included developing electronic PCB designs for the microcontroller and external electronics at an IC component level along with sourcing electro-\/mechanical components like motors and other electronics. The programming took place in STM32\+Cube\+IDE, programming in C with various drivers for hardware interfacing. To achieve our specific task, various closed-\/loop control systems for things like IMU angle-\/motor, photoresistor-\/motor, and encoder-\/motor systems were implemented.
 
-
+ 
 
 {\bfseries{ My Role and Takeaways }}
 
-The main challenge of this project was learning and researching how to design a PCB. I worked through Autodesk Fusion 360 to create schematics and board layouts with parts that I sourced through Digi\+Key. Ensuring electronic components would work in the design required reading through datasheets along with common applications and verifying appropriate lead times would be met for boards and electronics. I also had to learn how to program the microcontroller for the various components we needed, including motors and servos, radio recievers, IMUs, and photoresistors.
+The main challenge of this project was learning and researching how to design a PCB. I worked through Autodesk Fusion 360 to create schematics and board layouts with parts that I sourced through Digi\+Key. Ensuring electronic components would work in the design required reading through datasheets along with common applications and verifying appropriate lead times would be met for boards and electronics. Through this design process, I was able to produce a successfully functioning microcontroller PCB board that had minimal issues. I also had to learn how to program the microcontroller for the various components we needed, including motors and servos, radio recievers, IMUs, and photoresistors using various communication and device protocals including I2C, UART, ADCs, DMAs, and PWM control.
 
 {\bfseries{ More information on the project }}
 \begin{DoxyItemize}
+\item \href{https://www.youtube.com/watch?v=41eYMNxH7vk}{\texttt{ Demo Test}}
 \item \href{https://github.com/Cadre1/ME-507-Term-Project}{\texttt{ Github Repository}}
 \item \href{https://cadre1.github.io/ME-507-Term-Project/}{\texttt{ Programming Documentation}} 
 \end{DoxyItemize}
